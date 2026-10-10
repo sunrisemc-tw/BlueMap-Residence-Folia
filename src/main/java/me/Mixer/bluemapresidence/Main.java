@@ -231,7 +231,7 @@ extends JavaPlugin {
         if (this.resmgr == null) {
             return out;
         }
-        for (String resid : this.resmgr.getResidenceList(true, false).toArray(new String[0])) {
+        for (String resid : this.resmgr.getResidenceList()) {
             ClaimedResidence res = this.resmgr.getByName(resid);
             if (res == null) {
                 continue;
